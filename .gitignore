@@ -1,0 +1,42 @@
+# Virtual environments
+venv/
+.env/
+env/
+
+# Python cache files
+*.pyc
+*.pyo
+__pycache__/
+
+# IDE and editor settings
+.idea/
+.vscode/
+
+# Byte-compiled C extensions
+*.so
+
+# Build directories
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints
+
+# Testing
+.pytest_cache/
+.mypy_cache/
+coverage/
+htmlcov/
+
+# Dependency management
+Pipfile.lock
+poetry.lock
