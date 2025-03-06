@@ -1,7 +1,7 @@
 from typing import Callable
 from abc import ABC, abstractmethod
 
-from constants import LabType
+from intelligence_levels.constants import LabType
 
 
 class Strategy(ABC):

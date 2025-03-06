@@ -1,8 +1,8 @@
 import random
 from typing import Callable
 
-from constants import LabType, Movements, Point
-from strategies import Strategy
+from intelligence_levels.constants import LabType, Movements, Point
+from intelligence_levels.strategies import Strategy
 
 
 class RandomMovements(Strategy):
