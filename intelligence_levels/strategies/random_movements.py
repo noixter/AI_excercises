@@ -19,10 +19,10 @@ class RandomMovements(Strategy):
     ):
         possible_steps = self.sense(matrix, last_position, current_position)
         if not possible_steps:
-            return_vector = current_position - last_position
-            return_step = Movements((return_vector.x, return_vector.y))
-            self.move(matrix, current_position, return_step)
-            return last_position
+            return_vector = last_position - current_position
+            return_step = Movements(return_vector)
+            position, current_position = self.move(matrix, current_position, return_step)
+            return position, current_position
 
         next_step = random.choice(possible_steps)
         position, current_position = self.move(matrix, current_position, next_step)

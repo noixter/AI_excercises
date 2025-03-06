@@ -34,3 +34,12 @@ def sense(
             possible_steps.append(movement)
 
     return possible_steps
+
+
+def get_next_step_value(matrix: LabType, current_position: Point, next_step: Movements):
+    new_position = current_position + next_step.value
+    try:
+        next_step = matrix[new_position.x][new_position.y]
+        return next_step
+    except IndexError:
+        return False
